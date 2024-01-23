@@ -10,7 +10,7 @@ namespace ConsoleApp4 {
             double x = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(SinusX(x));
         }
-        static double Faktorial(int n) {
+        static double Factorial(int n) {
             double Factorial = 1;
             for (int i = 2; i <= n; i++) {
                 Factorial *= i;
@@ -18,11 +18,11 @@ namespace ConsoleApp4 {
             return Factorial;
         }
         static double SinusX(double x) {
-            double vysledek = 0;
+            double result = 0;
             for (int i = 1; i <= 15; i++) {
-                vysledek += Math.Pow(-1,i+1)*Math.Pow(x,2*i-1)/Faktorial(2*i-1);
+                result += Math.Pow(-1,i+1)*Math.Pow(x,2*i-1)/Factorial(2*i-1);
             }
-            return vysledek;
+            return result;
         }
     }
 }
