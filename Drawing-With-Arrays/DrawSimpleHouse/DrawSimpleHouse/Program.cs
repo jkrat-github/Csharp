@@ -1,26 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp9 {
     internal class Program {
         static void Main(string[] args) {
-            int vel = Convert.ToInt32(Console.ReadLine());
-            string[,] pole = new string[vel, vel];
-            Nakreslit(pole, vel);
+            int size = Convert.ToInt32(Console.ReadLine());
+            string[,] array = new string[size, size];
+            DrawSimpleHouse(array, size);
         }
-        static void Nakreslit(string[,] pole, int vel) {
-            for (int i = 0; i < vel; i++) {
-                for (int j = 0; j < vel; j++) {
-                    if (j == vel-1 && i > vel/2 && i < vel || i == vel-1 || i == vel/2 || 
-                        j == 0 && i > vel/2 && i < vel-1 || i-1 == j-1-vel/2 || i+j == vel-1-vel/2) {
-                        pole[i, j] = "#";
-                        Console.Write(pole[i, j]);
+        static void DrawSimpleHouse(string[,] array, int size) {
+            for (int i = 0; i < size; i++) {
+                for (int j = 0; j < size; j++) {
+                    if (j == size-1 && i > size/2 && i < size || i == size-1 || i == size/2 || 
+                        j == 0 && i > size/2 && i < size-1 || i-1 == j-1-size/2 || i+j == size-1-size/2) {
+                        array[i, j] = "#";
+                        Console.Write(array[i, j]);
                     } else {
-                        pole[i, j] = ".";
-                        Console.Write(pole[i, j]);
+                        array[i, j] = ".";
+                        Console.Write(array[i, j]);
                     }
                 }
                 Console.WriteLine();
