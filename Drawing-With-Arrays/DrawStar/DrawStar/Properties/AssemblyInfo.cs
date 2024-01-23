@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Obecné informace o sestavení se řídí přes následující 
 // sadu atributů. Změnou hodnot těchto atributů se upraví informace
 // přidružené k sestavení.
-[assembly: AssemblyTitle("ConsoleApp4")]
+[assembly: AssemblyTitle("DrawStar")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ConsoleApp4")]
+[assembly: AssemblyProduct("DrawStar")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Následující GUID se používá pro ID knihovny typů, pokud je tento projekt vystavený pro COM.
-[assembly: Guid("2211ff48-9c43-4fcb-8bdc-4ca4dfceef44")]
+[assembly: Guid("d940bd49-cce4-4c22-9cea-4221acf572e9")]
 
 // Informace o verzi sestavení se skládá z těchto čtyř hodnot:
 //
